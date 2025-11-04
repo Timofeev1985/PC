@@ -1,0 +1,158 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html,
+body {
+  font-size: 10px;
+  font-weight: normal;
+  background-image: linear-gradient(
+    to right top,
+    #060606,
+    #050504,
+    #030303,
+    #020201,
+    #000000
+  );
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button,
+input {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 130rem;
+  margin: 0 auto;
+}
+.header {
+  padding: 4rem 11rem 4rem 8rem;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 100%;
+  z-index: 10;
+}
+.header_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header_menu {
+  display: flex;
+  align-items: center;
+}
+.header_nav a:not(:last-child) {
+  margin-right: 7.1rem;
+}
+.header_nav a {
+  font-size: 1.6rem;
+}
+
+.header_logo {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+}
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10;
+  padding: 1rem 3rem;
+  border-radius: 5rem;
+  font-family: Roboto, sans-serif;
+}
+.header_button {
+  margin-left: 55.3rem;
+  background: linear-gradient(
+    141.34deg,
+    rgba(200, 154, 252, 1),
+    rgba(124, 106, 250, 1) 100%
+  );
+  font-size: 1.6rem;
+  font-weight: 400;
+  flex-shrink: 0;
+}
+.main-display {
+  padding-top: 27rem;
+}
+.main-display .container {
+  position: relative;
+  z-index: 2;
+}
+.main-display__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.main-display__header {
+  max-width: 76rem;
+  height: 180px;
+  margin-bottom: 5rem;
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 0%;
+}
+.main-display__timer {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 7.6rem;
+}
+.timer__item {
+  width: 10.2rem;
+  height: 11.2rem;
+  background-color: #121212;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.timer__count {
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 140%;
+}
+.timer__text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 140%;
+  opacity: 0.4;
+}
+.main-display__button {
+  background: linear-gradient(
+    140.99deg,
+    rgba(223, 89, 80, 1),
+    rgba(69, 16, 70, 1) 100%
+  );
+  font-weight: 700;
+  font-size: 1.6rem;
+}
